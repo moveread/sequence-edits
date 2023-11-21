@@ -1,4 +1,6 @@
 build
+ramda
+pydantic
 # fp @ git+https://moveread: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@github.com/moveread/moveread-lib.git#subdirectory=fp
 # vc @ git+https://moveread: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@github.com/moveread/moveread-lib.git#subdirectory=vc
 # box-extraction @ git+https://moveread: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@github.com/moveread/box-extraction.git
