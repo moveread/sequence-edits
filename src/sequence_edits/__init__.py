@@ -6,5 +6,5 @@ Tools for encoding/decoding sequence editions (insertions/deletions)
 - `Edit`: type, skip or insert + index
 - `Type`: skip or insert
 """
-from .main import decompress, apply
 from .models import Edit, Type
+from .main import decompress, apply
