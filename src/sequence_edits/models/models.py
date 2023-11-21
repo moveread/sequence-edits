@@ -8,3 +8,9 @@ Type = Literal["insert", "skip"]
 class Edit(BaseModel):
     type: Type
     idx: int
+    
+def skip(idx: int) -> Edit:
+    return Edit(type="skip", idx=idx)
+
+def insert(idx: int) -> Edit:
+    return Edit(type="insert", idx=idx)
