@@ -13,6 +13,8 @@ class Insert(BaseModel, Generic[A]):
     idx: int
     value: A = None
     
+Edit = Insert | Skip
+    
 @dataclass
 class Inserted(Generic[A]):
     value: A
