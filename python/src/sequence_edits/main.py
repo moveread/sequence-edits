@@ -1,7 +1,6 @@
 from typing import Iterable, TypeVar
 from functools import cmp_to_key
-import ramda as R
-from .edits import Skip, Insert, Inserted, Edit
+from .types import Skip, Insert, Inserted, Edit
 
 @cmp_to_key
 def key(x: Edit, y: Edit) -> Edit:

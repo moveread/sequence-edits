@@ -1,17 +1,18 @@
 from typing import Literal, TypeVar, Generic
 from dataclasses import dataclass
-from pydantic import BaseModel
-import ramda as R
 
-class Skip(BaseModel):
-    type: Literal['skip'] = 'skip'
-    idx: int
-       
 A = TypeVar('A')
-class Insert(BaseModel, Generic[A]):
-    type: Literal['insert'] = 'insert'
+
+@dataclass
+class Skip:
+    idx: int       
+    type: Literal['skip'] = 'skip'
+
+@dataclass
+class Insert(Generic[A]):
     idx: int
     value: A = None
+    type: Literal['insert'] = 'insert'
     
 Edit = Insert | Skip
     
