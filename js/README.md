@@ -1,3 +1,3 @@
-# Js
+# Sequence Edits
 
-> package_description
+> Tools for encoding/decoding sequence editions (insertions/deletions) in compact format.
