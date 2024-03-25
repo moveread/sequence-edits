@@ -1,4 +1,5 @@
 mod python
+mod js
 
 VENV := ".venv"
 PYTHON := ".venv/bin/python"

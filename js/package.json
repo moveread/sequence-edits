@@ -1,0 +1,24 @@
+{
+  "name": "sequence-edits",
+  "version": "1.0.0",
+  "description": "Javascript tools for encoding/decoding sequence editions (insertions/deletions) in compact format",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moveread/sequence-edits.git",
+    "directory": "js"
+  },
+  "author": "Marcel Claramunt",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ramda": "^0.29.11",
+    "@typescript-eslint/eslint-plugin": "",
+    "@typescript-eslint/parser": "",
+    "eslint": "",
+    "ramda": "^0.29.1",
+    "typescript": ""
+  }
+}
