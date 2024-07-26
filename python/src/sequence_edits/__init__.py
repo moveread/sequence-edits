@@ -1,6 +1,6 @@
 """
-### Sequence edits
-Tools for encoding/decoding sequence editions (insertions/deletions)
+### Sequence Edits
+> Compressed representation of sequence edits
 - `decompress: edits, [start, end) -> indices`
 - `apply: edits, start, xs -> edited xs`
 - `Edit`: skip or insert

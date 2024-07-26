@@ -1,1 +1,1 @@
-export { decompress, type Edit } from './main.js'
+export { decompress, apply, type Edit } from './main.js'

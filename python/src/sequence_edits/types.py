@@ -5,17 +5,17 @@ A = TypeVar('A')
 
 @dataclass
 class Skip:
-    idx: int       
-    type: Literal['skip'] = 'skip'
+  idx: int       
+  tag: Literal['skip'] = 'skip'
 
 @dataclass
 class Insert(Generic[A]):
-    idx: int
-    value: A = None
-    type: Literal['insert'] = 'insert'
-    
-Edit = Insert | Skip
-    
+  idx: int
+  value: A = None # type: ignore
+  tag: Literal['insert'] = 'insert'
+  
+Edit = Insert[A] | Skip
+  
 @dataclass
 class Inserted(Generic[A]):
-    value: A
+  value: A
